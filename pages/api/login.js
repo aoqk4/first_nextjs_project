@@ -2,10 +2,11 @@ const mId = "ksw";
 const mPw = "1234";
 
 export default function handler(req, res) {
+  console.log("찍다");
   const { id, pw } = JSON.parse(req.body);
-  if ("POST" !== req.method) {
-    return res.status(405).json({ ok: false, msg: "지원하지 않는 메소드" });
-  }
+  // if ("POST" !== req.method) {
+  //   return res.status(405).json({ ok: false, msg: "지원하지 않는 메소드" });
+  // }
 
   if (!id) {
     return res.json({ ok: false, msg: "아이디를 입력하세요" });
