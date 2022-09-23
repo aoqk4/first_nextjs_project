@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <>
       <Layout test="Hello">
-        <div className="font-bold text-gray-600">Hello World</div>
+        <div className="font-bold text-gray-600">메인 페이지입니다.</div>
       </Layout>
     </>
   );
